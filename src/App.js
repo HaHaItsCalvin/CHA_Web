@@ -7,6 +7,19 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
+const styles={
+	container: {
+		textAlign: 'center',
+		paddingTop: 200,
+		
+	},
+	background:{
+		height:'100%',
+		width:'100%',
+		background:'white',
+
+	}
+}
 
 const theme = createMuiTheme({
   overrides: {
@@ -30,16 +43,9 @@ const theme = createMuiTheme({
 class App extends Component {
   render() {
     return (
-      <div>
-       		 <NewNavBar/>
-
-
-        <Grid container  direction="row" med ={12} alignItems='center' justify='center'>
-        	<Grid item >
-	        <LandingBackground />
-	        </Grid>
-	    </Grid>
-
+      <div style={styles.background}>
+        		<NewNavBar/>
+	        	<LandingBackground />
         <MuiThemeProvider theme={theme}>
       		<Button>Overrides CSS</Button>
     	</MuiThemeProvider>

@@ -44,13 +44,11 @@ export default class NewNavBar extends React.Component{
 			<MuiThemeProvider theme={theme}>
 			<AppBar style={{ background: 'transparent', boxShadow: 'none'}}>
         		<Toolbar>
-        				<Grid container med={2} direction="row" align-items="stretch" justify = "flex-start">
-        					<Grid item justify="flex-start">
+        				<Grid container direction="row" justify="space-between">
+        					<Grid item med={3}>
             					<Button> Calvin Ha </Button>
             				</Grid>
-            			</Grid>
-            			<Grid container med={10} direction="row" align-items="stretch" justify="flex-end">
-            				<Grid item >
+            				<Grid item med={3}>
 	            				<Button> Home</Button>
     	        				<Button> About </Button>
         	    				<Button> Photos </Button>
