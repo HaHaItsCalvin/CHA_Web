@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom'
 
 
 const theme = createMuiTheme({
@@ -46,13 +47,26 @@ export default class NewNavBar extends React.Component{
         		<Toolbar>
         				<Grid container direction="row" justify="space-between">
         					<Grid item med={3}>
-            					<Button> Calvin Ha </Button>
+            					<Button>
+									Home
+								</Button>
             				</Grid>
             				<Grid item med={3}>
-	            				<Button> Home</Button>
-    	        				<Button> About </Button>
-        	    				<Button> Photos </Button>
-            					<Button> Code </Button>
+	            				<Button >
+									Home
+								</Button>
+
+    	        				<Button>
+									About
+								</Button>
+
+        	    				<Button >
+									Code
+								</Button>
+
+            					<Button >
+									Photos
+								</Button>
             				</Grid>
             			</Grid>
        			</Toolbar>
