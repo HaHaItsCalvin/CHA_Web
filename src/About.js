@@ -5,14 +5,14 @@ import Image from 'material-ui-image'
 import Background from './Corgeek.jpg';
 import NavBar from './NavBar';
 
-export class Photos extends React.Component{
+export class About extends React.Component{
 	render() {
 		return(
 			<div>
 				<NavBar/>
-				<h1> This is the Photos Page </h1>
-				<h1> This is the Photos Page </h1>
-				<h1> This is the Photos Page </h1>
+				<h1> This is the About Page </h1>
+				<h1> This is the About Page </h1>
+				<h1> This is the About Page </h1>
 			</div>
 			)
 	}

@@ -4,8 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom'
-
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 const theme = createMuiTheme({
   palette: {
@@ -16,7 +15,7 @@ const theme = createMuiTheme({
   	overrides:{
      MuiAppbar:{
      	root:{
-     		position: 'static',
+     		position: 'fixed',
      		color:'primary',
      	},
      },
@@ -47,24 +46,24 @@ export default class NewNavBar extends React.Component{
         		<Toolbar>
         				<Grid container direction="row" justify="space-between">
         					<Grid item med={3}>
-            					<Button>
-									Home
+            					<Button component={Link} to="/">
+										Home
 								</Button>
             				</Grid>
             				<Grid item med={3}>
-	            				<Button >
+	            				<Button component={Link} to="/">
 									Home
 								</Button>
 
-    	        				<Button>
+    	        				<Button component={Link} to="/About">
 									About
 								</Button>
 
-        	    				<Button >
+        	    				<Button component={Link} to="/Code">
 									Code
 								</Button>
 
-            					<Button >
+            					<Button component={Link} to="/Photos">
 									Photos
 								</Button>
             				</Grid>
